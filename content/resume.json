@@ -1,0 +1,78 @@
+{
+  "experience": [
+    {
+      "date": "Apr 2025 — Mar 2026",
+      "role": "Full Stack Developer",
+      "company": "Enterprise Insurance Platform",
+      "location": "Remote",
+      "bullets": [
+        "Migrated client-side Hasura GraphQL queries behind new <span class=\"hl\">HotChocolate .NET 8</span> endpoints, enabling server-side data composition that centralized authorization, logging, and filtering in a single backend response",
+        "Resolved <span class=\"hl\">Veracode SSRF vulnerabilities (CWE-918)</span> using IOptions&lt;T&gt; configuration pattern; refactored legacy handlers flagged by SonarQube for cognitive complexity",
+        "Maintained <span class=\"hl\">80%+ test coverage</span> with MSTest, Moq, and AutoFixture within Azure DevOps CI/CD pipelines with SonarQube and Veracode quality gates",
+        "Primary ownership of a CQRS/MediatR architecture with dual data sources (PostgreSQL + Hasura), Azure Service Bus messaging, and Webpack Module Federation micro frontend"
+      ],
+      "tags": [".NET 8", "React", "HotChocolate", "MediatR", "PostgreSQL", "Hasura", "Azure"]
+    },
+    {
+      "date": "Aug 2025 — Feb 2026",
+      "role": "Freelance Full Stack Developer",
+      "company": "ACR Automotive",
+      "location": "Remote",
+      "bullets": [
+        "Built the company's <span class=\"hl\">first digital catalog</span> — a production B2B platform replacing printed catalogs, enabling retail partners to search inventory digitally",
+        "Architected full application using <span class=\"hl\">Claude Code</span> as primary AI development tool, managing <span class=\"hl\">362 commits</span> with 12 custom Agent Skills",
+        "Engineered a 6-stage intelligent search system with <span class=\"hl\">sub-300ms</span> cross-reference lookups across an 865-part catalog"
+      ],
+      "tags": ["Next.js 15", "React 19", "TypeScript", "Supabase", "Claude Code"]
+    },
+    {
+      "date": "Aug 2024 — Jan 2025",
+      "role": "Full-Stack .NET / React Engineer",
+      "company": "Building Certification Platform",
+      "location": "Remote",
+      "bullets": [
+        "Built compliance assessment forms for a FORTIFIED certification platform supporting <span class=\"hl\">3 building programs</span> with Bronze/Silver/Gold designation levels",
+        "Implemented schema-driven form system in .NET 7 where backend attributes auto-generated React form UI, with FluentValidation enforcing complex conditional business rules",
+        "Authored <span class=\"hl\">~74% of the V2 domain layer</span> — 39 entities, 105 validators, 63 services, 32 controllers, and 120+ base type abstractions"
+      ],
+      "tags": [".NET 7", "React", "FluentValidation", "EF Core", "Clean Architecture"]
+    },
+    {
+      "date": "Mar 2021 — Nov 2024",
+      "role": "Design (Senior Software) Engineer",
+      "company": "Cisco",
+      "location": "Remote",
+      "bullets": [
+        "Led development of a role-based CMS using React and Next.js for component documentation alongside live design resources",
+        "Built asset management system with AWS S3, DynamoDB, and Lambda for versioned file storage and automated processing"
+      ],
+      "tags": ["React", "Next.js", "AWS", "DynamoDB", "Lambda"]
+    },
+    {
+      "date": "Feb 2017 — Feb 2021",
+      "role": "Software Engineer",
+      "company": "Visa",
+      "location": "Austin, TX",
+      "bullets": [
+        "Developed accessible, reusable React components for the <span class=\"hl\">Visa Product Design System (VPDS)</span>, adopted by multiple internal payment application teams",
+        "Built interactive prototypes that enabled executive stakeholders to evaluate new payment product concepts before full development"
+      ],
+      "tags": ["React", "Design Systems", "Accessibility", "Prototyping"]
+    }
+  ],
+  "skills": [
+    { "category": "Languages", "items": "TypeScript, JavaScript, C#, SQL" },
+    { "category": "Frontend", "items": "React, Next.js, Tailwind CSS, SCSS, Webpack Module Federation" },
+    { "category": "Backend", "items": ".NET 8, Node.js, GraphQL (HotChocolate, Apollo), REST, EF Core, MediatR/CQRS" },
+    { "category": "Data", "items": "PostgreSQL, Supabase, Hasura, DynamoDB" },
+    { "category": "Cloud", "items": "Azure (DevOps, Service Bus, AKS), AWS (S3, Lambda, DynamoDB), Docker, Vercel" },
+    { "category": "AI Tooling", "items": "Claude Code, GitHub Copilot, MCP (Model Context Protocol), Agent Skills" },
+    { "category": "Quality", "items": "MSTest, Moq, Jest, Playwright, FluentValidation, Zod, Veracode, SonarQube" }
+  ],
+  "education": {
+    "school": "University of Florida",
+    "degree": "BS Computer Engineering",
+    "year": "2016",
+    "icon": "UF"
+  }
+}

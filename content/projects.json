@@ -1,0 +1,20 @@
+[
+  {
+    "title": "ACR Automotive Digital Catalog",
+    "link": "#",
+    "description": "A production B2B platform that replaced printed catalogs for a Mexican brake parts distributor. Features a 6-stage intelligent search system enabling retail counter staff to cross-reference competitor SKUs in <span class=\"hl\">sub-300ms</span>.",
+    "tags": ["Next.js 15", "React 19", "Supabase", "Claude Code", "32 API Routes"]
+  },
+  {
+    "title": "Risk Recommendations Platform",
+    "link": "#",
+    "description": "Enterprise risk management system for a global insurance company. Micro frontend architecture with <span class=\"hl\">dual data sources</span>, real-time subscriptions, and CQRS command processing via HotChocolate GraphQL.",
+    "tags": [".NET 8", "React", "GraphQL", "Module Federation", "Azure Service Bus"]
+  },
+  {
+    "title": "FORTIFIED Certification Platform",
+    "link": "#",
+    "description": "Building certification platform supporting disaster-resistant construction. Schema-driven form system with polymorphic domain modeling and <span class=\"hl\">105 conditional validators</span>.",
+    "tags": [".NET 7", "React", "FluentValidation", "39 Entities", "105 Validators"]
+  }
+]

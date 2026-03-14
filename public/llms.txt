@@ -1,0 +1,34 @@
+# Abel Mak
+
+> Full-stack software engineer with 9+ years building React and .NET applications at enterprise scale. Specializes in GraphQL APIs, CQRS architectures, micro frontends, and cloud infrastructure on Azure and AWS.
+
+## About
+
+Abel Mak is a full-stack engineer based in Florida. He holds a BS in Computer Engineering from the University of Florida (2016). His career spans enterprise companies including Visa, Cisco, and FM Global, with expertise across React, .NET 8, TypeScript, GraphQL (HotChocolate, Apollo, Hasura), PostgreSQL, Azure, and AWS.
+
+Abel combines enterprise engineering rigor with modern AI-assisted development practices, using tools like Claude Code and GitHub Copilot in production workflows.
+
+## Core Expertise
+
+- Frontend: React, Next.js, TypeScript, Tailwind CSS, Webpack Module Federation, micro frontend architecture
+- Backend: .NET 8, C#, Node.js, GraphQL (HotChocolate), REST APIs, EF Core, MediatR/CQRS, FluentValidation
+- Data: PostgreSQL, Supabase, Hasura, DynamoDB
+- Cloud & DevOps: Azure (DevOps, Service Bus, AKS), AWS (S3, Lambda, DynamoDB), Docker, Vercel, GitHub Actions
+- AI Tooling: Claude Code, GitHub Copilot, MCP (Model Context Protocol)
+- Quality: MSTest, Moq, Jest, Playwright, Veracode (SAST), SonarQube
+
+## Key Projects
+
+- [Enterprise Risk Recommendations Platform](https://abelmak.com/#projects): Full-stack .NET 8 + React micro frontend with CQRS/MediatR, dual data sources (PostgreSQL + Hasura), Azure Service Bus messaging, and HotChocolate GraphQL API
+- [ACR Automotive Digital Catalog](https://abelmak.com/#projects): Production B2B platform built with Next.js 15, React 19, and Supabase, featuring a 6-stage intelligent search system with sub-300ms lookups
+- [FORTIFIED Certification Platform](https://abelmak.com/#projects): Building certification system in .NET 7 with schema-driven form generation, polymorphic domain modeling, and FluentValidation
+
+## Contact
+
+- Email: abelmak07@gmail.com
+- LinkedIn: https://www.linkedin.com/in/abelmak07/
+- GitHub: https://github.com/amak07
+
+## Pages
+
+- [Home](https://abelmak.com/)
