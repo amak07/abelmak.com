@@ -53,11 +53,17 @@ export interface SiteConfig {
     description: string;
     url: string;
     siteName: string;
+    image?: string;
   };
   twitter: {
     card: string;
     title: string;
     description: string;
+    image?: string;
+  };
+  verification?: {
+    google?: string;
+    bing?: string;
   };
   jsonLd: Record<string, unknown>;
 }

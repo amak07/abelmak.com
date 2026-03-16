@@ -20,6 +20,7 @@ const outfit = Outfit({
 const config = getSiteConfig();
 
 export const metadata: Metadata = {
+  metadataBase: new URL(config.url),
   title: config.title,
   description: config.description,
   keywords: config.keywords,
@@ -39,7 +40,18 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: config.twitter.title,
     description: config.twitter.description,
+    images: [config.url + '/opengraph-image'],
   },
+  ...(config.verification?.google || config.verification?.bing
+    ? {
+        verification: {
+          ...(config.verification.google ? { google: config.verification.google } : {}),
+          ...(config.verification.bing
+            ? { other: { 'msvalidate.01': config.verification.bing } }
+            : {}),
+        },
+      }
+    : {}),
 };
 
 export default function RootLayout({
@@ -50,6 +62,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${manrope.variable} ${outfit.variable}`}>
       <head>
+        {Object.values(config.social).map((url) => (
+          <link key={url} rel="me" href={url} />
+        ))}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(config.jsonLd) }}

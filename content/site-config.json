@@ -14,38 +14,48 @@
     "title": "Abel Mak | Full-Stack Software Engineer",
     "description": "Full-stack engineer with 9+ years shipping React and .NET applications at enterprise scale.",
     "url": "https://abelmak.com",
-    "siteName": "Abel Mak"
+    "siteName": "Abel Mak",
+    "image": "https://abelmak.com/opengraph-image"
   },
   "twitter": {
     "card": "summary_large_image",
     "title": "Abel Mak | Full-Stack Software Engineer",
-    "description": "Full-stack engineer with 9+ years shipping React and .NET applications at enterprise scale."
+    "description": "Full-stack engineer with 9+ years shipping React and .NET applications at enterprise scale.",
+    "image": "https://abelmak.com/opengraph-image"
+  },
+  "verification": {
+    "google": "",
+    "bing": ""
   },
   "jsonLd": {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Abel Mak",
-    "url": "https://abelmak.com",
-    "jobTitle": "Full-Stack Software Engineer",
-    "description": "Full-stack engineer with 9+ years shipping React and .NET applications at enterprise scale.",
-    "sameAs": [
-      "https://www.linkedin.com/in/abelmak07/",
-      "https://github.com/amak07"
-    ],
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "University of Florida"
-    },
-    "knowsAbout": [
-      "React",
-      ".NET",
-      "TypeScript",
-      "GraphQL",
-      "PostgreSQL",
-      "Azure",
-      "AWS",
-      "CQRS",
-      "Clean Architecture"
-    ]
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Abel Mak",
+      "url": "https://abelmak.com",
+      "jobTitle": "Full-Stack Software Engineer",
+      "description": "Full-stack engineer with 9+ years shipping React and .NET applications at enterprise scale.",
+      "image": "https://abelmak.com/profile_pic.webp",
+      "sameAs": [
+        "https://www.linkedin.com/in/abelmak07/",
+        "https://github.com/amak07"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Florida"
+      },
+      "knowsAbout": [
+        "React",
+        ".NET",
+        "TypeScript",
+        "GraphQL",
+        "PostgreSQL",
+        "Azure",
+        "AWS",
+        "CQRS",
+        "Clean Architecture"
+      ]
+    }
   }
 }
