@@ -11,11 +11,7 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import ScrollAnimations from '@/components/ScrollAnimations';
 import ChatCTA from '@/components/ChatCTA';
-import dynamic from 'next/dynamic';
-
-const ChatWidget = dynamic(() => import('@/components/ChatWidget'), {
-  ssr: false,
-});
+import ChatWidget from '@/components/ChatWidget';
 
 export default function Home() {
   if (process.env.NODE_ENV === 'development') {
