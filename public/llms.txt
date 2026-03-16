@@ -1,12 +1,10 @@
 # Abel Mak
 
-> Full-stack software engineer with 9+ years building React and .NET applications at enterprise scale. Specializes in GraphQL APIs, CQRS architectures, micro frontends, and cloud infrastructure on Azure and AWS.
+> Full-stack software engineer with 9+ years of experience at Visa, Cisco, and FM Global. Now shipping faster with Claude Code and AI-assisted development. Specializes in React, .NET, GraphQL APIs, CQRS architectures, and cloud infrastructure on Azure and AWS.
 
 ## About
 
-Abel Mak is a full-stack engineer based in Florida. He holds a BS in Computer Engineering from the University of Florida (2016). His career spans enterprise companies including Visa, Cisco, and FM Global, with expertise across React, .NET 8, TypeScript, GraphQL (HotChocolate, Apollo, Hasura), PostgreSQL, Azure, and AWS.
-
-Abel combines enterprise engineering rigor with modern AI-assisted development practices, using tools like Claude Code and GitHub Copilot in production workflows.
+Abel Mak is a full-stack engineer based in Florida. He holds a BS in Computer Engineering from the University of Florida (2016). After 9+ years building production software at Visa, Cisco, and FM Global, he now pairs with AI tools like Claude Code and GitHub Copilot to ship better code faster. His work spans React, Next.js, .NET 8, TypeScript, GraphQL (HotChocolate, Apollo, Hasura), PostgreSQL, Azure, and AWS.
 
 ## Core Expertise
 
