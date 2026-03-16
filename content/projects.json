@@ -1,20 +1,14 @@
 [
   {
     "title": "ACR Automotive Digital Catalog",
-    "link": "#",
-    "description": "A production B2B platform that replaced printed catalogs for a Mexican brake parts distributor. Features a 6-stage intelligent search system enabling retail counter staff to cross-reference competitor SKUs in <span class=\"hl\">sub-300ms</span>.",
-    "tags": ["Next.js 15", "React 19", "Supabase", "Claude Code", "32 API Routes"]
+    "link": "https://github.com/amak07/acr-automotive",
+    "description": "Production B2B auto parts platform built solo with <span class=\"hl\">Claude Code</span> — 8-table PostgreSQL schema with Row Level Security, 32 API routes, bilingual interface, and a 6-stage cascade search with trigram indexes for instant competitor cross-referencing.",
+    "tags": ["Next.js", "React", "Supabase", "Claude Code", "PostgreSQL"]
   },
   {
-    "title": "Risk Recommendations Platform",
-    "link": "#",
-    "description": "Enterprise risk management system for a global insurance company. Micro frontend architecture with <span class=\"hl\">dual data sources</span>, real-time subscriptions, and CQRS command processing via HotChocolate GraphQL.",
-    "tags": [".NET 8", "React", "GraphQL", "Module Federation", "Azure Service Bus"]
-  },
-  {
-    "title": "FORTIFIED Certification Platform",
-    "link": "#",
-    "description": "Building certification platform supporting disaster-resistant construction. Schema-driven form system with polymorphic domain modeling and <span class=\"hl\">105 conditional validators</span>.",
-    "tags": [".NET 7", "React", "FluentValidation", "39 Entities", "105 Validators"]
+    "title": "Skills.sh — Agent Skills Manager",
+    "link": "https://github.com/amak07/vscode-skills-sh",
+    "description": "VS Code extension that works as a package manager for <span class=\"hl\">AI agent skills</span> — discover, install, and manage skills across 11 AI coding platforms including Claude Code, Cursor, and GitHub Copilot. Features marketplace discovery, automatic updates, and team sharing via skill manifests.",
+    "tags": ["TypeScript", "VS Code Extension", "AI Agents", "Open Source"]
   }
 ]

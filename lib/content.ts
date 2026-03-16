@@ -78,5 +78,5 @@ export function getProjects(): ProjectItem[] {
 
 export function getAbout(): string[] {
   const content = fs.readFileSync(path.join(contentDir, 'about.md'), 'utf-8');
-  return content.split('\n\n').filter(p => p.trim());
+  return content.split(/\r?\n\r?\n/).filter(p => p.trim());
 }

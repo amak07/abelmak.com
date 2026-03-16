@@ -8,7 +8,10 @@ export default function Nav() {
   return (
     <nav aria-label="Main navigation">
       <div className="nav-inner">
-        <a href="/" className="nav-brand">Abel Mak</a>
+        <a href="/" className="nav-brand">
+          <img src="/bioengineering_11675822.png" alt="" width={28} height={28} className="nav-logo" />
+          Abel Mak
+        </a>
         <button
           className="nav-toggle"
           aria-label="Toggle navigation"
@@ -18,10 +21,16 @@ export default function Nav() {
           <span></span><span></span><span></span>
         </button>
         <ul className={`nav-links${open ? ' open' : ''}`}>
-          {['Background', 'Experience', 'Projects', 'Skills', 'Contact'].map((item) => (
-            <li key={item}>
-              <a href={`#${item.toLowerCase()}`} onClick={() => setOpen(false)}>
-                {item}
+          {[
+            { label: 'Background', href: '#background' },
+            { label: 'Experience', href: '#experience' },
+            { label: 'Projects', href: '#projects' },
+            { label: 'Skills', href: '#skills' },
+            { label: 'Contact', href: '#contact' },
+          ].map((item) => (
+            <li key={item.label}>
+              <a href={item.href} onClick={() => setOpen(false)}>
+                {item.label}
               </a>
             </li>
           ))}

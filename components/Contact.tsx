@@ -11,7 +11,7 @@ export default function Contact({ email, social }: ContactProps) {
     <section className="section-wrap" id="contact" aria-label="Contact">
       <div className="section-inner cta-inner anim">
         <h2>Let&apos;s build something.</h2>
-        <p>Looking for a full-stack engineer who can own systems end-to-end? Let&apos;s talk.</p>
+        <p>9+ years shipping production software at scale.<br />Now I build with AI — and I can help your team do the same. Let&apos;s talk.</p>
         <div className="cta-links">
           <a id="email-link" href="#" className="cta-link" aria-label="Email">
             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>

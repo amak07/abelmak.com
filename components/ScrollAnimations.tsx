@@ -23,6 +23,29 @@ export default function ScrollAnimations() {
       observer.observe(el);
     });
 
+    // Active nav link tracking — pick section closest to top of viewport
+    const navLinks = document.querySelectorAll<HTMLAnchorElement>('.nav-links a');
+    const navOffset = 80;
+
+    const updateActiveNav = () => {
+      const sections = document.querySelectorAll<HTMLElement>('section[id]');
+      let currentId = '';
+
+      sections.forEach((section) => {
+        const top = section.getBoundingClientRect().top;
+        if (top <= navOffset) {
+          currentId = section.id;
+        }
+      });
+
+      navLinks.forEach((link) => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
+      });
+    };
+
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    updateActiveNav();
+
     // Build email via JS so CDNs can't mangle it
     const emailLink = document.getElementById('email-link');
     if (emailLink) {
@@ -32,7 +55,10 @@ export default function ScrollAnimations() {
       );
     }
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('scroll', updateActiveNav);
+    };
   }, []);
 
   return null;

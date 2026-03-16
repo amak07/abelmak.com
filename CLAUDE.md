@@ -116,5 +116,5 @@ Loaded via `next/font/google` with CSS variables `--font-bricolage` and `--font-
 - Tools: update_resume, update_project, update_about, sync_knowledge, trigger_deploy
 
 ## Privacy Notes
-- Company names for FM Global and Relativity Holdings are scrubbed in public content (use "Enterprise Insurance Platform" and "Building Certification Platform")
-- The chatbot should NOT reveal company names — use generic descriptions
+- Company names (Factory Mutual, Relativity Holdings, Cisco, Visa) are used on the public site since it serves as a resume
+- For non-resume content (architectural docs, internal write-ups), use generic descriptions ("Enterprise Insurance Platform", "Building Certification Platform") if those documents may be published

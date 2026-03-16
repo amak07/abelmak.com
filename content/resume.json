@@ -1,17 +1,16 @@
 {
   "experience": [
     {
-      "date": "Apr 2025 — Mar 2026",
+      "date": "Apr 2025 — Feb 2026",
       "role": "Full Stack Developer",
-      "company": "Enterprise Insurance Platform",
+      "company": "Factory Mutual (via TekSystems)",
       "location": "Remote",
       "bullets": [
-        "Migrated client-side Hasura GraphQL queries behind new <span class=\"hl\">HotChocolate .NET 8</span> endpoints, enabling server-side data composition that centralized authorization, logging, and filtering in a single backend response",
-        "Resolved <span class=\"hl\">Veracode SSRF vulnerabilities (CWE-918)</span> using IOptions&lt;T&gt; configuration pattern; refactored legacy handlers flagged by SonarQube for cognitive complexity",
-        "Maintained <span class=\"hl\">80%+ test coverage</span> with MSTest, Moq, and AutoFixture within Azure DevOps CI/CD pipelines with SonarQube and Veracode quality gates",
-        "Primary ownership of a CQRS/MediatR architecture with dual data sources (PostgreSQL + Hasura), Azure Service Bus messaging, and Webpack Module Federation micro frontend"
+        "Designed <span class=\"hl\">HotChocolate GraphQL endpoints</span> that moved client-side Hasura queries behind the .NET backend for server-side data composition — centralizing authorization, logging, and filtering into a single response",
+        "Resolved <span class=\"hl\">Veracode SSRF vulnerabilities (CWE-918)</span> by migrating URLs to the IOptions&lt;T&gt; pattern; refactored legacy handlers flagged by SonarQube for cognitive complexity using guard clauses and extracted methods",
+        "Rebuilt the team's shared <span class=\"hl\">React component library</span> by merging two legacy codebases into a single NX monorepo with modernized dependencies, TypeScript fixes, and a Storybook application replacing fragmented demo pages"
       ],
-      "tags": [".NET 8", "React", "HotChocolate", "MediatR", "PostgreSQL", "Hasura", "Azure"]
+      "tags": [".NET 8", "React", "GraphQL", "Azure"]
     },
     {
       "date": "Aug 2025 — Feb 2026",
@@ -19,23 +18,23 @@
       "company": "ACR Automotive",
       "location": "Remote",
       "bullets": [
-        "Built the company's <span class=\"hl\">first digital catalog</span> — a production B2B platform replacing printed catalogs, enabling retail partners to search inventory digitally",
-        "Architected full application using <span class=\"hl\">Claude Code</span> as primary AI development tool, managing <span class=\"hl\">362 commits</span> with 12 custom Agent Skills",
-        "Engineered a 6-stage intelligent search system with <span class=\"hl\">sub-300ms</span> cross-reference lookups across an 865-part catalog"
+        "Architected and delivered a production B2B auto parts platform solo using <span class=\"hl\">Claude Code</span> — 8-table PostgreSQL schema with Row Level Security, 32 API routes, 23-component design system, and bilingual Spanish/English interface on Next.js 16 / React 19 / Supabase",
+        "Engineered an atomic <span class=\"hl\">Excel import/export pipeline</span> with a 3-stage workflow (validate → preview → execute), a 22-rule ValidationEngine, snapshot-based rollback with conflict detection, and a PostgreSQL RPC transaction function ensuring zero partial imports across 3 related tables",
+        "Designed a <span class=\"hl\">6-stage cascade search algorithm</span> with PostgreSQL trigram indexes, early termination, and batch image fetching — enabling counter staff to instantly cross-reference competitor part numbers to catalog equivalents"
       ],
-      "tags": ["Next.js 15", "React 19", "TypeScript", "Supabase", "Claude Code"]
+      "tags": ["Next.js", "React", "TypeScript", "Supabase", "Claude Code"]
     },
     {
       "date": "Aug 2024 — Jan 2025",
       "role": "Full-Stack .NET / React Engineer",
-      "company": "Building Certification Platform",
+      "company": "Relativity Holdings",
       "location": "Remote",
       "bullets": [
-        "Built compliance assessment forms for a FORTIFIED certification platform supporting <span class=\"hl\">3 building programs</span> with Bronze/Silver/Gold designation levels",
-        "Implemented schema-driven form system in .NET 7 where backend attributes auto-generated React form UI, with FluentValidation enforcing complex conditional business rules",
-        "Authored <span class=\"hl\">~74% of the V2 domain layer</span> — 39 entities, 105 validators, 63 services, 32 controllers, and 120+ base type abstractions"
+        "Built <span class=\"hl\">25+ compliance evaluation forms</span> end-to-end across .NET 7 and React for the IBHS FORTIFIED building certification platform — covering 3 building programs and authoring 74% of the V2 domain layer",
+        "Designed and built a reusable <span class=\"hl\">comment template system</span> from scratch so auditors could apply saved feedback across evaluations — supporting 4 product lines with feature-toggle rollout and role-based permissions",
+        "Built a <span class=\"hl\">42-rule validation engine</span> that enforced different requirements based on hazard type, certification level, and building features — doubling as a real-time progress tracker on every auto-save"
       ],
-      "tags": [".NET 7", "React", "FluentValidation", "EF Core", "Clean Architecture"]
+      "tags": [".NET 7", "React", "EF Core"]
     },
     {
       "date": "Mar 2021 — Nov 2024",
@@ -43,10 +42,10 @@
       "company": "Cisco",
       "location": "Remote",
       "bullets": [
-        "Led development of a role-based CMS using React and Next.js for component documentation alongside live design resources",
-        "Built asset management system with AWS S3, DynamoDB, and Lambda for versioned file storage and automated processing"
+        "Led development of a role-based CMS using React and Next.js enabling teams to publish, version, and manage component documentation alongside live design resources",
+        "Built asset management system with AWS S3, DynamoDB, and Lambda for versioned file storage, secure access controls, and automated artifact processing"
       ],
-      "tags": ["React", "Next.js", "AWS", "DynamoDB", "Lambda"]
+      "tags": ["React", "Next.js", "AWS"]
     },
     {
       "date": "Feb 2017 — Feb 2021",
@@ -54,20 +53,18 @@
       "company": "Visa",
       "location": "Austin, TX",
       "bullets": [
-        "Developed accessible, reusable React components for the <span class=\"hl\">Visa Product Design System (VPDS)</span>, adopted by multiple internal payment application teams",
-        "Built interactive prototypes that enabled executive stakeholders to evaluate new payment product concepts before full development"
+        "Developed accessible, reusable React components for the <span class=\"hl\">Visa Product Design System (VPDS)</span>, adopted across multiple internal payment application teams",
+        "Built interactive prototypes enabling executives to evaluate new payment product concepts before committing to full development"
       ],
-      "tags": ["React", "Design Systems", "Accessibility", "Prototyping"]
+      "tags": ["React", "Design Systems", "Accessibility"]
     }
   ],
   "skills": [
-    { "category": "Languages", "items": "TypeScript, JavaScript, C#, SQL" },
-    { "category": "Frontend", "items": "React, Next.js, Tailwind CSS, SCSS, Webpack Module Federation" },
-    { "category": "Backend", "items": ".NET 8, Node.js, GraphQL (HotChocolate, Apollo), REST, EF Core, MediatR/CQRS" },
-    { "category": "Data", "items": "PostgreSQL, Supabase, Hasura, DynamoDB" },
-    { "category": "Cloud", "items": "Azure (DevOps, Service Bus, AKS), AWS (S3, Lambda, DynamoDB), Docker, Vercel" },
-    { "category": "AI Tooling", "items": "Claude Code, GitHub Copilot, MCP (Model Context Protocol), Agent Skills" },
-    { "category": "Quality", "items": "MSTest, Moq, Jest, Playwright, FluentValidation, Zod, Veracode, SonarQube" }
+    { "category": "Languages", "items": "TypeScript, JavaScript, C#" },
+    { "category": "Frontend", "items": "React, Next.js, Tailwind CSS, Storybook, Zod" },
+    { "category": "Backend", "items": ".NET 8, EF Core, GraphQL (HotChocolate), PostgreSQL, SQL Server, Supabase" },
+    { "category": "Cloud & CI/CD", "items": "Azure, AWS, Vercel, GitHub Actions" },
+    { "category": "Tools", "items": "Claude Code, GitHub Copilot, Playwright" }
   ],
   "education": {
     "school": "University of Florida",

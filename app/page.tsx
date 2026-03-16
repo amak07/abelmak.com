@@ -1,3 +1,4 @@
+import { unstable_noStore } from 'next/cache';
 import { getSiteConfig, getResumeData, getProjects, getAbout } from '@/lib/content';
 import Nav from '@/components/Nav';
 import Hero from '@/components/Hero';
@@ -11,6 +12,9 @@ import Footer from '@/components/Footer';
 import ScrollAnimations from '@/components/ScrollAnimations';
 
 export default function Home() {
+  if (process.env.NODE_ENV === 'development') {
+    unstable_noStore();
+  }
   const config = getSiteConfig();
   const resume = getResumeData();
   const projects = getProjects();

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Bricolage_Grotesque, Outfit } from 'next/font/google';
+import { Manrope, Outfit } from 'next/font/google';
 import { getSiteConfig } from '@/lib/content';
 import './globals.css';
 
-const bricolage = Bricolage_Grotesque({
+const manrope = Manrope({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700', '800'],
   variable: '--font-bricolage',
@@ -48,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${bricolage.variable} ${outfit.variable}`}>
+    <html lang="en" className={`${manrope.variable} ${outfit.variable}`}>
       <head>
         <script
           type="application/ld+json"

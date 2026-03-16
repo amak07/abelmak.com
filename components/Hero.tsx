@@ -2,9 +2,16 @@ export default function Hero() {
   return (
     <div className="hero-wrap">
       <div className="hero-inner anim">
-        <h1>Building enterprise systems<br />that <span className="accent">actually work.</span></h1>
+        <div className="hero-top">
+          <div className="hero-text">
+            <h1>Thinking through the mess. <span className="accent">Building solutions that work.</span></h1>
+          </div>
+          <div className="hero-photo">
+            <img src="/profile_pic.png" alt="Abel Mak" width={320} height={320} />
+          </div>
+        </div>
         <p className="hero-intro">
-          I&apos;m a full-stack software engineer with <span className="hl">9+ years</span> shipping React and .NET applications at places like <span className="hl">Visa</span>, <span className="hl">Cisco</span>, and <span className="hl">FM Global</span>. I spend most of my time in the space between frontend and backend — designing APIs, composing data across services, and making sure complex systems hold together under real usage.
+          I&apos;m a <span className="hl">full-stack engineer</span> who gravitates toward the messy parts of a project — where requirements are fuzzy, tradeoffs matter, and the right answer isn&apos;t obvious yet. Lately I&apos;ve been pairing with AI tools like <span className="hl">Claude Code</span> to solve hard problems faster and ship better code.
         </p>
       </div>
     </div>
