@@ -98,6 +98,7 @@ function getMessageText(msg: { parts: Array<{ type: string; text?: string }> }):
 
 export default function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
   const [input, setInput] = useState('');
   const messagesRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -167,7 +168,7 @@ export default function ChatWidget() {
   // Escape key closes panel
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && isOpen) setIsOpen(false);
+      if (e.key === 'Escape' && isOpen) handleClose();
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
@@ -194,6 +195,14 @@ export default function ChatWidget() {
     return () => vv.removeEventListener('resize', handleResize);
   }, [isOpen]);
 
+  function handleClose() {
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsOpen(false);
+      setIsClosing(false);
+    }, 250);
+  }
+
   function handleSend(content: string) {
     if (!content.trim() || isStreaming || isAtLimit) return;
     sendMessage({ text: content.trim() });
@@ -214,7 +223,7 @@ export default function ChatWidget() {
       {/* Floating bubble */}
       <button
         className={`chat-bubble ${isOpen ? 'chat-bubble-open' : ''}`}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => isOpen ? handleClose() : setIsOpen(true)}
         aria-label={isOpen ? 'Close chat' : "Chat with Abel's AI"}
       >
         {isOpen ? (
@@ -230,14 +239,14 @@ export default function ChatWidget() {
       </button>
 
       {/* Chat panel */}
-      {isOpen && (
-        <div className="chat-panel" role="dialog" aria-label="Chat with Abel">
+      {(isOpen || isClosing) && (
+        <div className={`chat-panel ${isClosing ? 'chat-panel-closing' : ''}`} role="dialog" aria-label="Chat with Abel">
           <div className="chat-header">
             <span className="chat-header-title">Chat with Abel</span>
             <span className="chat-badge">AI</span>
             <button
               className="chat-close"
-              onClick={() => setIsOpen(false)}
+              onClick={handleClose}
               aria-label="Close chat"
             >
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

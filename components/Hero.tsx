@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <div className="hero-wrap">
-      <div className="hero-inner anim">
+      <div className="hero-inner">
         <div className="hero-top">
           <div className="hero-text">
             <h1>Thinking through the mess. <span className="accent">Building solutions that work.</span></h1>

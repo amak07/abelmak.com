@@ -149,16 +149,22 @@ html.js-loaded .anim.visible { opacity: 1; transform: translateY(0); }
 .chat-cta-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
 
 /* Chat Widget */
-.chat-bubble { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 90; width: 56px; height: 56px; border-radius: 50%; background: var(--color-accent); color: #fff; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(194, 65, 12, 0.35); transition: transform 0.2s ease, background 0.2s ease; animation: chat-pulse 2.5s ease-in-out infinite; }
+.chat-bubble { position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 90; width: 56px; height: 56px; border-radius: 50%; background: var(--color-accent); color: #fff; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(194, 65, 12, 0.35); transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1), background 0.3s ease, box-shadow 0.3s ease; animation: chat-pulse 2.5s ease-in-out infinite; }
+.chat-bubble svg { transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1); }
 .chat-bubble:hover { transform: scale(1.08); background: var(--color-accent-hover); }
 .chat-bubble-open { background: var(--color-text-secondary); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); animation: none; }
+.chat-bubble-open svg { transform: rotate(90deg); }
 .chat-bubble-open:hover { background: var(--color-text-muted); }
 
 @keyframes chat-pulse { 0%, 100% { transform: scale(1); box-shadow: 0 4px 16px rgba(194, 65, 12, 0.35); } 50% { transform: scale(1.1); box-shadow: 0 4px 28px rgba(194, 65, 12, 0.7); } }
 
-.chat-panel { position: fixed; bottom: 5.5rem; right: 1.5rem; z-index: 90; width: 380px; max-height: min(520px, calc(100vh - 5.5rem - 70px)); background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 12px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12); display: flex; flex-direction: column; overflow: hidden; animation: chat-slide-up 0.2s ease-out; }
+.chat-panel { position: fixed; bottom: 5.5rem; right: 1.5rem; z-index: 90; width: 380px; max-height: min(520px, calc(100vh - 5.5rem - 70px)); background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 12px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12); display: flex; flex-direction: column; overflow: hidden; animation: chat-open 0.3s cubic-bezier(0.32, 0.72, 0, 1); transform-origin: bottom right; }
+.chat-panel-closing { animation: chat-close 0.25s cubic-bezier(0.32, 0.72, 0, 1) forwards; }
 
-@keyframes chat-slide-up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes chat-open { from { opacity: 0; transform: translateY(12px) scale(0.96); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes chat-close { from { opacity: 1; transform: translateY(0) scale(1); } to { opacity: 0; transform: translateY(12px) scale(0.96); } }
+@keyframes chat-open-mobile { from { opacity: 0; transform: translateY(100%); } to { opacity: 1; transform: translateY(0); } }
+@keyframes chat-close-mobile { from { opacity: 1; transform: translateY(0); } to { opacity: 0; transform: translateY(100%); } }
 
 .chat-header { display: flex; align-items: center; gap: 0.5rem; padding: 1rem 1.25rem; border-bottom: 1px solid var(--color-border); }
 .chat-header-title { font-family: var(--font-display); font-weight: 700; font-size: 1rem; flex: 1; }
@@ -231,7 +237,8 @@ html.js-loaded .anim.visible { opacity: 1; transform: translateY(0); }
     .projects-grid { grid-template-columns: 1fr; }
     .skills-grid { grid-template-columns: 1fr; gap: 0.5rem; }
     .skills-grid dt { margin-top: 0.75rem; }
-    .chat-panel { inset: 60px 0 0 0; width: 100%; max-height: calc(100% - 60px); border-radius: 0; }
+    .chat-panel { inset: 60px 0 0 0; width: 100%; max-height: calc(100% - 60px); border-radius: 0; transform-origin: bottom center; animation-name: chat-open-mobile; }
+    .chat-panel-closing { animation-name: chat-close-mobile; }
     .chat-close { padding: 0.5rem; color: var(--color-text); }
     .chat-close svg { width: 22px; height: 22px; }
     .chat-bubble { width: 48px; height: 48px; bottom: 1rem; right: 1rem; }
