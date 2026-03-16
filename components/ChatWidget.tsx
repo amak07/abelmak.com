@@ -173,9 +173,10 @@ export default function ChatWidget() {
     return () => window.removeEventListener('keydown', handler);
   }, [isOpen]);
 
-  // Mobile keyboard: adjust chat panel height when virtual keyboard opens
+  // Mobile keyboard: adjust chat panel height when virtual keyboard opens (desktop only)
   useEffect(() => {
     if (!isOpen || !window.visualViewport) return;
+    if (window.innerWidth <= 640) return; // fullscreen mode handles mobile
     const vv = window.visualViewport;
     const handleResize = () => {
       const panel = document.querySelector('.chat-panel') as HTMLElement | null;
