@@ -326,6 +326,16 @@ export default function ChatWidget() {
                 </div>
               );
             })}
+
+            {/* Show thinking dots while waiting for stream to start */}
+            {isStreaming && (!lastMsg || lastMsg.role === 'user') && (
+              <div className="chat-typing" role="status">
+                <span className="visually-hidden">Abel is typing</span>
+                <span className="chat-dot" aria-hidden="true" />
+                <span className="chat-dot" aria-hidden="true" />
+                <span className="chat-dot" aria-hidden="true" />
+              </div>
+            )}
           </div>
 
           {error && (
