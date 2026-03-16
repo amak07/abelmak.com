@@ -92,7 +92,7 @@ export default async function Image() {
               textAlign: 'center',
             }}
           >
-            9+ years building React and .NET applications at enterprise scale
+            9+ years building software. Now shipping faster with Claude Code.
           </div>
           <div
             style={{
