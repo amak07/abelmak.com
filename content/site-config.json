@@ -1,8 +1,8 @@
 {
   "name": "Abel Mak",
   "title": "Abel Mak | Full-Stack Software Engineer",
-  "description": "Abel Mak is a full-stack software engineer with 9+ years building React and .NET applications at enterprise scale for Visa, Cisco, and FM Global. Based in Florida.",
-  "keywords": "Abel Mak, full-stack developer, software engineer, React, .NET, TypeScript, GraphQL, portfolio",
+  "description": "Abel Mak is a full-stack software engineer with 9+ years building React and .NET applications at Visa, Cisco, and FM Global. Now shipping faster with Claude Code and AI-assisted development.",
+  "keywords": "Abel Mak, full-stack developer, software engineer, React, .NET, TypeScript, GraphQL, Claude Code, AI developer, AI-assisted development, portfolio",
   "url": "https://abelmak.com",
   "email": "abelmak07@gmail.com",
   "social": {
@@ -12,7 +12,7 @@
   "og": {
     "type": "website",
     "title": "Abel Mak | Full-Stack Software Engineer",
-    "description": "Full-stack engineer with 9+ years shipping React and .NET applications at enterprise scale.",
+    "description": "9+ years building software. Now shipping faster with Claude Code.",
     "url": "https://abelmak.com",
     "siteName": "Abel Mak",
     "image": "https://abelmak.com/opengraph-image"
@@ -20,7 +20,7 @@
   "twitter": {
     "card": "summary_large_image",
     "title": "Abel Mak | Full-Stack Software Engineer",
-    "description": "Full-stack engineer with 9+ years shipping React and .NET applications at enterprise scale.",
+    "description": "9+ years building software. Now shipping faster with Claude Code.",
     "image": "https://abelmak.com/opengraph-image"
   },
   "verification": {
@@ -35,7 +35,7 @@
       "name": "Abel Mak",
       "url": "https://abelmak.com",
       "jobTitle": "Full-Stack Software Engineer",
-      "description": "Full-stack engineer with 9+ years shipping React and .NET applications at enterprise scale.",
+      "description": "9+ years building software. Now shipping faster with Claude Code.",
       "image": "https://abelmak.com/profile_pic.webp",
       "sameAs": [
         "https://www.linkedin.com/in/abelmak07/",
@@ -47,12 +47,15 @@
       },
       "knowsAbout": [
         "React",
+        "Next.js",
         ".NET",
         "TypeScript",
         "GraphQL",
         "PostgreSQL",
         "Azure",
         "AWS",
+        "Claude Code",
+        "AI-Assisted Development",
         "CQRS",
         "Clean Architecture"
       ]
