@@ -64,7 +64,6 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba
 .hero-inner h1 .accent { color: var(--color-highlight); }
 .hero-photo { flex-shrink: 0; }
 .hero-photo img { width: 240px; height: 240px; border-radius: 50%; object-fit: cover; border: 3px solid var(--color-border-light); }
-.hero-tagline { font-family: var(--font-display); font-size: clamp(1.1rem, 3vw, 1.35rem); color: var(--color-text-secondary); font-weight: 500; margin-top: 0.75rem; letter-spacing: -0.01em; line-height: 1.4; }
 .hero-intro { font-size: 1.05rem; color: var(--color-text-secondary); max-width: 540px; line-height: 1.85; }
 
 h3 { font-size: 1.05rem; font-weight: 600; margin-bottom: 0.25rem; }

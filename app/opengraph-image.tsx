@@ -33,87 +33,79 @@ export default async function Image() {
             top: 0,
           }}
         />
-        {/* Content */}
+        {/* Content — centered stack for WhatsApp square-crop compatibility */}
         <div
           style={{
             display: 'flex',
+            flexDirection: 'column',
             alignItems: 'center',
-            justifyContent: 'space-between',
-            padding: '60px 80px',
+            justifyContent: 'center',
             flex: 1,
+            padding: '40px 80px',
           }}
         >
-          {/* Text side */}
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              flex: 1,
-              paddingRight: 60,
-            }}
-          >
-            <div
-              style={{
-                fontSize: 64,
-                fontFamily: 'Manrope',
-                fontWeight: 800,
-                color: '#1c1917',
-                letterSpacing: '-0.03em',
-                lineHeight: 1.1,
-                marginBottom: 16,
-              }}
-            >
-              Abel Mak
-            </div>
-            <div
-              style={{
-                fontSize: 32,
-                fontFamily: 'Manrope',
-                fontWeight: 600,
-                color: '#c2410c',
-                letterSpacing: '-0.01em',
-                marginBottom: 32,
-              }}
-            >
-              Full-Stack Software Engineer
-            </div>
-            <div
-              style={{
-                fontSize: 20,
-                fontFamily: 'Manrope',
-                fontWeight: 400,
-                color: '#57534e',
-                lineHeight: 1.5,
-                maxWidth: 500,
-              }}
-            >
-              9+ years building React and .NET applications at enterprise scale
-              for Visa, Cisco, and FM Global.
-            </div>
-            <div
-              style={{
-                fontSize: 18,
-                fontFamily: 'Manrope',
-                fontWeight: 500,
-                color: '#a8a29e',
-                marginTop: 40,
-              }}
-            >
-              abelmak.com
-            </div>
-          </div>
-          {/* Profile photo */}
           <img
             src={profileSrc}
-            width={280}
-            height={280}
+            width={200}
+            height={200}
             style={{
               borderRadius: '50%',
               border: '4px solid #e7e5e4',
               objectFit: 'cover',
+              marginBottom: 24,
             }}
           />
+          <div
+            style={{
+              fontSize: 52,
+              fontFamily: 'Manrope',
+              fontWeight: 800,
+              color: '#1c1917',
+              letterSpacing: '-0.03em',
+              lineHeight: 1.1,
+              marginBottom: 8,
+              textAlign: 'center',
+            }}
+          >
+            Abel Mak
+          </div>
+          <div
+            style={{
+              fontSize: 26,
+              fontFamily: 'Manrope',
+              fontWeight: 800,
+              color: '#c2410c',
+              letterSpacing: '-0.01em',
+              marginBottom: 20,
+              textAlign: 'center',
+            }}
+          >
+            Full-Stack Software Engineer
+          </div>
+          <div
+            style={{
+              fontSize: 18,
+              fontFamily: 'Manrope',
+              fontWeight: 800,
+              color: '#57534e',
+              lineHeight: 1.5,
+              textAlign: 'center',
+            }}
+          >
+            9+ years building React and .NET applications at enterprise scale
+          </div>
+          <div
+            style={{
+              fontSize: 16,
+              fontFamily: 'Manrope',
+              fontWeight: 800,
+              color: '#a8a29e',
+              marginTop: 20,
+              textAlign: 'center',
+            }}
+          >
+            abelmak.com
+          </div>
         </div>
       </div>
     ),

@@ -6,8 +6,7 @@ export default function Hero() {
       <div className="hero-inner anim">
         <div className="hero-top">
           <div className="hero-text">
-            <h1>Abel Mak <span className="accent">Full-Stack Software Engineer</span></h1>
-            <p className="hero-tagline">Thinking through the mess. Building solutions that work.</p>
+            <h1>Thinking through the mess. <span className="accent">Building solutions that work.</span></h1>
           </div>
           <div className="hero-photo">
             <Image src="/profile_pic.webp" alt="Abel Mak, Full-Stack Software Engineer" width={320} height={320} priority />
