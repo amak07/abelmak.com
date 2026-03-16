@@ -9,7 +9,7 @@ const MAX_MESSAGES = 20;
 const SUGGESTED_QUESTIONS = [
   'What do you build?',
   'Tell me about your recent work',
-  'How can I contact Abel?',
+  'How can I contact you?',
 ];
 
 const LINKIFY_PATTERN = /(https?:\/\/[^\s]+|[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}|(?:linkedin\.com|github\.com)\/[^\s]+)/g;
