@@ -1,30 +1,16 @@
 import { ImageResponse } from 'next/og';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
-export const runtime = 'edge';
 export const alt = 'Abel Mak — Full-Stack Software Engineer';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
-function arrayBufferToBase64(buffer: ArrayBuffer): string {
-  const bytes = new Uint8Array(buffer);
-  let binary = '';
-  for (let i = 0; i < bytes.byteLength; i++) {
-    binary += String.fromCharCode(bytes[i]);
-  }
-  return btoa(binary);
-}
-
 export default async function Image() {
-  const [manrope, profilePic] = await Promise.all([
-    fetch(
-      'https://fonts.gstatic.com/s/manrope/v15/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FN_C-bg.ttf'
-    ).then((res) => res.arrayBuffer()),
-    fetch(new URL('/profile_pic.png', 'https://abelmak.com')).then((res) =>
-      res.arrayBuffer()
-    ),
-  ]);
+  const manrope = readFileSync(join(process.cwd(), 'app', 'fonts', 'Manrope-ExtraBold.ttf'));
+  const profilePic = readFileSync(join(process.cwd(), 'public', 'profile_pic.png'));
 
-  const profileSrc = `data:image/png;base64,${arrayBufferToBase64(profilePic)}`;
+  const profileSrc = `data:image/png;base64,${profilePic.toString('base64')}`;
 
   return new ImageResponse(
     (
@@ -137,20 +123,8 @@ export default async function Image() {
         {
           name: 'Manrope',
           data: manrope,
-          style: 'normal',
-          weight: 400,
-        },
-        {
-          name: 'Manrope',
-          data: manrope,
-          style: 'normal',
-          weight: 600,
-        },
-        {
-          name: 'Manrope',
-          data: manrope,
-          style: 'normal',
-          weight: 800,
+          style: 'normal' as const,
+          weight: 800 as const,
         },
       ],
     }
