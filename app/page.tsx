@@ -10,6 +10,12 @@ import EducationSection from '@/components/Education';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import ScrollAnimations from '@/components/ScrollAnimations';
+import ChatCTA from '@/components/ChatCTA';
+import dynamic from 'next/dynamic';
+
+const ChatWidget = dynamic(() => import('@/components/ChatWidget'), {
+  ssr: false,
+});
 
 export default function Home() {
   if (process.env.NODE_ENV === 'development') {
@@ -26,6 +32,7 @@ export default function Home() {
       <Nav />
       <main id="main-content" tabIndex={-1}>
         <Hero />
+        <ChatCTA />
         <Background paragraphs={aboutParagraphs} />
         <Experience items={resume.experience} />
         <Projects items={projects} />
@@ -35,6 +42,7 @@ export default function Home() {
       </main>
       <Footer />
       <ScrollAnimations />
+      <ChatWidget />
     </>
   );
 }

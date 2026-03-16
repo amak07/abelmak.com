@@ -6,7 +6,7 @@ interface EducationProps {
 
 export default function EducationSection({ education }: EducationProps) {
   return (
-    <section className="section-wrap" aria-label="Education">
+    <section className="section-wrap" id="education" aria-label="Education">
       <div className="section-inner anim">
         <h2 className="section-header">Education</h2>
         <div className="section-header-line"></div>
