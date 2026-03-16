@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Hero() {
   return (
     <div className="hero-wrap">
@@ -7,7 +9,7 @@ export default function Hero() {
             <h1>Thinking through the mess. <span className="accent">Building solutions that work.</span></h1>
           </div>
           <div className="hero-photo">
-            <img src="/profile_pic.png" alt="Abel Mak" width={320} height={320} />
+            <Image src="/profile_pic.png" alt="Abel Mak" width={320} height={320} priority />
           </div>
         </div>
         <p className="hero-intro">
