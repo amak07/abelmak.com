@@ -178,8 +178,9 @@ html.js-loaded .anim.visible { opacity: 1; transform: translateY(0); }
 .chat-welcome p { font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 1.25rem; line-height: 1.6; }
 
 .chat-chips { display: flex; flex-direction: column; gap: 0.4rem; }
-.chat-chip { font-family: var(--font-body); font-size: 0.825rem; font-weight: 500; color: var(--color-accent); background: var(--color-tag-bg); border: 1px solid #f5c8b4; border-radius: 8px; padding: 0.5rem 0.75rem; cursor: pointer; transition: all 0.2s ease; text-align: left; }
-.chat-chip:hover { background: var(--color-accent); color: #fff; border-color: var(--color-accent); }
+.chat-chip { font-family: var(--font-body); font-size: 0.825rem; font-weight: 500; color: var(--color-accent); background: var(--color-tag-bg); border: 1px solid #f5c8b4; border-radius: 8px; padding: 0.5rem 0.75rem; cursor: pointer; transition: all 0.2s ease; text-align: left; -webkit-tap-highlight-color: transparent; }
+@media (hover: hover) { .chat-chip:hover { background: var(--color-accent); color: #fff; border-color: var(--color-accent); } }
+.chat-chip:active { background: var(--color-accent); color: #fff; border-color: var(--color-accent); }
 
 .chat-msg-group { display: flex; flex-direction: column; gap: 0.4rem; align-self: flex-start; max-width: 85%; }
 .chat-followups { display: flex; flex-direction: column; gap: 0.3rem; animation: chat-fade-in 0.3s ease-out; }
@@ -203,7 +204,8 @@ html.js-loaded .anim.visible { opacity: 1; transform: translateY(0); }
 
 .chat-error { font-size: 0.8rem; color: #dc2626; padding: 0.5rem 1.25rem; background: #fef2f2; border-top: 1px solid #fecaca; }
 
-.chat-limit { font-size: 0.825rem; color: var(--color-text-muted); text-align: center; padding: 0.75rem 1.25rem; border-top: 1px solid var(--color-border); }
+.chat-limit { font-size: 0.825rem; color: var(--color-text-secondary); text-align: center; padding: 0.75rem 1.25rem; border-top: 1px solid var(--color-border); }
+.chat-limit p { margin-bottom: 0.6rem; line-height: 1.5; }
 
 .chat-input-wrap { display: flex; gap: 0.5rem; padding: 0.75rem 1rem; border-top: 1px solid var(--color-border); }
 .chat-input { flex: 1; font-family: var(--font-body); font-size: 0.875rem; border: 1px solid var(--color-border); border-radius: 8px; padding: 0.5rem 0.75rem; background: var(--color-bg); color: var(--color-text); outline: none; transition: border-color 0.2s; }

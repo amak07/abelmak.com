@@ -35,7 +35,10 @@ function parseMessage(content: string): { text: string; followUps: string[]; has
   const lower = text.toLowerCase();
   const hasContact =
     lower.includes('abelmak07@gmail.com') ||
-    (lower.includes('linkedin') && lower.includes('email'));
+    (lower.includes('linkedin') && lower.includes('email')) ||
+    /here'?s (my|how to reach|my info|how to get in touch)/.test(lower) ||
+    /happy to connect/.test(lower) ||
+    /reach me|contact me|get in touch/.test(lower);
 
   if (hasContact) {
     text = text
@@ -156,6 +159,13 @@ export default function ChatWidget() {
   // Focus input when panel opens (skip on mobile to avoid raising keyboard)
   useEffect(() => {
     if (isOpen && window.innerWidth > 640) inputRef.current?.focus();
+  }, [isOpen]);
+
+  // Lock background scroll on mobile when chat is open
+  useEffect(() => {
+    if (!isOpen || window.innerWidth > 640) return;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = ''; };
   }, [isOpen]);
 
   // Listen for open-chat custom event (from CTA)
@@ -340,15 +350,18 @@ export default function ChatWidget() {
 
           {error && (
             <div className="chat-error" role="alert">
-              {error.message === 'Service unavailable' || error.message === 'Something went wrong'
-                ? 'Chat is temporarily unavailable. Try again later.'
-                : error.message}
+              {error.message?.includes('Too many requests')
+                ? 'Thanks for chatting! You\u2019ve reached the limit for now.'
+                : error.message === 'Service unavailable' || error.message === 'Something went wrong'
+                  ? 'Chat is temporarily unavailable. Try again later.'
+                  : error.message}
             </div>
           )}
 
           {isAtLimit ? (
             <div className="chat-limit" role="status">
-              Session limit reached. Refresh to start a new conversation.
+              <p>Thanks for chatting! If you&apos;d like to continue the conversation, here&apos;s how to reach me.</p>
+              <ContactCard />
             </div>
           ) : (
             <form className="chat-input-wrap" onSubmit={handleSubmit}>
