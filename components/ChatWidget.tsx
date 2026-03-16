@@ -152,9 +152,9 @@ export default function ChatWidget() {
     if (!isStreaming) userScrolledUp.current = false;
   }, [messages, isStreaming]);
 
-  // Focus input when panel opens
+  // Focus input when panel opens (skip on mobile to avoid raising keyboard)
   useEffect(() => {
-    if (isOpen) inputRef.current?.focus();
+    if (isOpen && window.innerWidth > 640) inputRef.current?.focus();
   }, [isOpen]);
 
   // Listen for open-chat custom event (from CTA)
