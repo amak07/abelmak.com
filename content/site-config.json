@@ -1,8 +1,8 @@
 {
   "name": "Abel Mak",
   "title": "Abel Mak | Full-Stack Software Engineer",
-  "description": "Full-stack software engineer with 9+ years building React and .NET apps at Visa, Cisco, and FM Global. Now shipping faster with Claude Code.",
-  "keywords": "Abel Mak, full-stack developer, software engineer, React, .NET, TypeScript, GraphQL, Claude Code, AI developer, AI-assisted development, portfolio",
+  "description": "Full-stack software engineer with 9+ years building React and .NET apps at Visa, Nutrien, Cisco, and FM Global. Now shipping faster with Claude Code.",
+  "keywords": "Abel Mak, full-stack developer, software engineer, React, React Native, .NET, TypeScript, GraphQL, Claude Code, AI developer, AI-assisted development, portfolio",
   "url": "https://abelmak.com",
   "email": "abelmak07@gmail.com",
   "social": {
@@ -48,10 +48,11 @@
       "hasOccupation": {
         "@type": "Occupation",
         "name": "Full-Stack Software Engineer",
-        "skills": "React, Next.js, .NET, TypeScript, GraphQL, Claude Code"
+        "skills": "React, React Native, Next.js, .NET, TypeScript, GraphQL, Claude Code"
       },
       "knowsAbout": [
         "React",
+        "React Native",
         "Next.js",
         ".NET",
         "TypeScript",

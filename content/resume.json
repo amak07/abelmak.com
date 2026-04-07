@@ -37,6 +37,19 @@
       "tags": [".NET 7", "React", "EF Core"]
     },
     {
+      "date": "Feb 2023 — Mar 2024",
+      "role": "React Native Developer",
+      "company": "Nutrien (via TekSystems)",
+      "location": "Remote",
+      "bullets": [
+        "Served as <span class=\"hl\">design engineer</span> bridging UX design and development teams, owning first-draft API and props design for new components and translating Figma specifications into production <span class=\"hl\">React Native</span> code",
+        "Built and maintained components within a shared <span class=\"hl\">React Native design system</span> consumed by Nutrien's primary consumer applications, including data table UIs, new component variants, and performance-focused refactors",
+        "Provided hands-on developer support to consuming teams through screenshare pairing sessions, debugging component integration issues including <span class=\"hl\">AWS Amplify/GraphQL</span> data fetching and runtime errors",
+        "Expanded unit test coverage using <span class=\"hl\">Testing Library</span> and maintained design system documentation (including Storybook) with linked code examples; served as final technical reviewer for all team documentation contributions"
+      ],
+      "tags": ["React Native", "Design Systems", "AWS Amplify", "GraphQL"]
+    },
+    {
       "date": "Mar 2021 — Nov 2024",
       "role": "Design (Senior Software) Engineer",
       "company": "Cisco",
@@ -61,10 +74,10 @@
   ],
   "skills": [
     { "category": "Languages", "items": "TypeScript, JavaScript, C#" },
-    { "category": "Frontend", "items": "React, Next.js, Tailwind CSS, Storybook, Zod" },
-    { "category": "Backend", "items": ".NET 8, EF Core, GraphQL (HotChocolate), PostgreSQL, SQL Server, Supabase" },
+    { "category": "Frontend", "items": "React, React Native, Next.js, Tailwind CSS, Storybook, Zod" },
+    { "category": "Backend", "items": ".NET 8, EF Core, GraphQL (HotChocolate), PostgreSQL, SQL Server, Supabase, AWS Amplify" },
     { "category": "Cloud & CI/CD", "items": "Azure, AWS, Vercel, GitHub Actions" },
-    { "category": "Tools", "items": "Claude Code, GitHub Copilot, Playwright" }
+    { "category": "Tools", "items": "Claude Code, GitHub Copilot, Playwright, Testing Library, Azure DevOps" }
   ],
   "education": {
     "school": "University of Florida",

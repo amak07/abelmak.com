@@ -1,19 +1,19 @@
 # Abel Mak
 
-> Full-stack software engineer with 9+ years of experience at Visa, Cisco, and FM Global. Now shipping faster with Claude Code and AI-assisted development. Specializes in React, .NET, GraphQL APIs, CQRS architectures, and cloud infrastructure on Azure and AWS.
+> Full-stack software engineer with 9+ years of experience at Visa, Nutrien, Cisco, and FM Global. Now shipping faster with Claude Code and AI-assisted development. Specializes in React, .NET, GraphQL APIs, CQRS architectures, and cloud infrastructure on Azure and AWS.
 
 ## About
 
-Abel Mak is a full-stack engineer based in Florida. He holds a BS in Computer Engineering from the University of Florida (2016). After 9+ years building production software at Visa, Cisco, and FM Global, he now pairs with AI tools like Claude Code and GitHub Copilot to ship better code faster. His work spans React, Next.js, .NET 8, TypeScript, GraphQL (HotChocolate, Apollo, Hasura), PostgreSQL, Azure, and AWS.
+Abel Mak is a full-stack engineer based in Florida. He holds a BS in Computer Engineering from the University of Florida (2016). After 9+ years building production software at Visa, Nutrien, Cisco, and FM Global, he now pairs with AI tools like Claude Code and GitHub Copilot to ship better code faster. His work spans React, Next.js, .NET 8, TypeScript, GraphQL (HotChocolate, Apollo, Hasura), PostgreSQL, Azure, and AWS.
 
 ## Core Expertise
 
-- Frontend: React, Next.js, TypeScript, Tailwind CSS, Webpack Module Federation, micro frontend architecture
+- Frontend: React, React Native, Next.js, TypeScript, Tailwind CSS, Webpack Module Federation, micro frontend architecture
 - Backend: .NET 8, C#, Node.js, GraphQL (HotChocolate), REST APIs, EF Core, MediatR/CQRS, FluentValidation
 - Data: PostgreSQL, Supabase, Hasura, DynamoDB
 - Cloud & DevOps: Azure (DevOps, Service Bus, AKS), AWS (S3, Lambda, DynamoDB), Docker, Vercel, GitHub Actions
 - AI Tooling: Claude Code, GitHub Copilot, MCP (Model Context Protocol)
-- Quality: MSTest, Moq, Jest, Playwright, Veracode (SAST), SonarQube
+- Quality: MSTest, Moq, Jest, Playwright, Testing Library, Veracode (SAST), SonarQube
 
 ## Key Projects
 
