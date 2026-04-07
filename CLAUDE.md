@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Personal portfolio site for Abel Mak, a full-stack software engineer with 9+ years experience (Visa, Cisco, FM Global). Built with Next.js 15 (App Router, SSG) and deployed on Vercel. Content-driven architecture where JSON/MD files generate static pages at build time. Future phases include a public AI chatbot and private interview prep tool.
+Personal portfolio site for Abel Mak, a full-stack software engineer with 9+ years experience (Visa, Nutrien, Cisco, FM Global). Built with Next.js 15 (App Router, SSG) and deployed on Vercel. Content-driven architecture where JSON/MD files generate static pages at build time. Future phases include a public AI chatbot and private interview prep tool.
 
 ## Tech Stack
 
@@ -183,5 +183,5 @@ The session is NOT over after pushing. You must:
 - Report status periodically — the user should never have to ask "what's happening?"
 
 ## Privacy Notes
-- Company names (Factory Mutual, Relativity Holdings, Cisco, Visa) are used on the public site since it serves as a resume
+- Company names (Factory Mutual, Relativity Holdings, Nutrien, Cisco, Visa) are used on the public site since it serves as a resume
 - For non-resume content (architectural docs, internal write-ups), use generic descriptions ("Enterprise Insurance Platform", "Building Certification Platform") if those documents may be published
